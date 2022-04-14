@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: gray;
+}
+
+.container {
+  /* box-sizing: border-box; */
+  width: 500px;
+  margin: 90px auto;
+  padding: 30px;
+  background: rgb(148, 119, 108);
+  height: max-content;
+}
+
+.display {
+  position: relative;
+  background: black;
+  width: 410px;
+  margin: 2rem auto;
+  border-radius: 5px;
+  color: white;
+  font-size: 40px;
+  text-align: right;
+  padding: 0.7em 0.75em;
+}
+
+button {
+  width: 80px;
+  min-height: 60px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.key-add {
+  grid-area: add;
+}
+.key-subtract {
+  grid-area: subtract;
+}
+.key-multiply {
+  grid-area: multiply;
+}
+.key-divide {
+  grid-area: divide;
+}
+.key-0 {
+  grid-area: zero;
+}
+.key-1 {
+  grid-area: one;
+}
+.key-2 {
+  grid-area: two;
+}
+.key-3 {
+  grid-area: three;
+}
+.key-4 {
+  grid-area: four;
+}
+.key-5 {
+  grid-area: five;
+}
+.key-6 {
+  grid-area: six;
+}
+.key-7 {
+  grid-area: seven;
+}
+.key-8 {
+  grid-area: eight;
+}
+.key-9 {
+  grid-area: nine;
+}
+
+.key-decimal {
+  grid-area: decimal;
+}
+.key-clear {
+  grid-area: clear;
+}
+.key-delete {
+  grid-area: del;
+}
+.key-equalsTo {
+  grid-area: equalsTo;
+}
+
+.keys {
+  display: grid;
+  grid-template-areas:
+    "add subtract multiply divide"
+    "seven eight nine equalsTo"
+    "four five six equalsTo"
+    "three two one equalsTo"
+    "decimal zero clear del";
+  gap: 15px;
+}
